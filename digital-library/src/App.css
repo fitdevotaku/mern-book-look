@@ -14,7 +14,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #2b5f6e;
 }
 
 @keyframes App-logo-spin {
@@ -28,25 +28,25 @@
 
 /* component styles here */
 .NewBook {
-  background-color: #2c3e50;
+  background-color: #8a7028;
   min-height: 100vh;
   color: white;
 }
 
 .BookDetails {
-  background-color: #2c3e50;
+  background-color: #8a7028;
   min-height: 100vh;
   color: white;
 }
 
 .BookUpdate {
-  background-color: #2c3e50;
+  background-color: #8a7028;
   min-height: 100vh;
   color: white;
 }
 
 .BookList {
-  background-color: #2c3e50;
+  background-color: #8a7028;
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -73,7 +73,7 @@
 }
 
 .details {
-  height: 130px;
+  height: 230px;
   padding: 10px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .details h3 {
-  color: #6c757d;
+  color: #273c4e;
   font-size: 1em;
   padding: 10px 0 10px 0;
 }
