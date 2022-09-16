@@ -1,25 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-
 import NewBook from "./components/NewBook";
 import BookList from "./components/BookList";
 import BookDetails from "./components/BookDetails";
 import BookUpdate from "./components/BookUpdate";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <Routes>
-          <Route exact path="/" component={BookList} />
-          <Route path="/create-book" component={NewBook} />
-          <Route path="/book-edit/:id" component={BookUpdate} />
-          <Route path="/display-book/:id" component={BookDetails} />
-        </Routes>
-      </Router>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<BookList />} />
+        <Route path="/create-book" element={<NewBook />} />
+        <Route path="/book-edit/:id" element={<BookUpdate />} />
+        <Route path="/display-book/:id" element={<BookDetails />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
