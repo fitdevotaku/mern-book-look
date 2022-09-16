@@ -7,7 +7,7 @@ const BookCard = (props) => {
 
   return (
     <div className="card-container">
-      <img src="../Bodybuilding-Books.webp" alt="buildingMuscle" />
+      <img src="../Bodybuilding.png" alt="buildingMuscle" />
       <div className="details">
         <h2>
           <Link to={`/display-book/${book._id}`}>{book.title}</Link>
