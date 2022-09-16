@@ -14,7 +14,7 @@ class BookList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:8082/api/books")
+      .get("http://localhost:5000/api/books")
       .then((res) => {
         this.setState({
           books: res.data,
@@ -27,7 +27,6 @@ class BookList extends Component {
 
   render() {
     const books = this.state.books;
-    console.log("PrintBook: " + books);
     let bookList;
 
     if (!books) {
@@ -42,7 +41,7 @@ class BookList extends Component {
           <div className="row">
             <div className="col-md-12">
               <br />
-              <h2 className="display-4 text-center">Books List</h2>
+              <h2 className="display-4 text-center">List of Books</h2>
             </div>
 
             <div className="col-md-11">
