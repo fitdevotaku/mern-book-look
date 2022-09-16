@@ -1,8 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
+const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
+const books = require("./routes/api/books");
 
 mongoose
   .connect(process.env.MONGO_URL)
@@ -10,6 +12,15 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+// cors
+app.use(cors());
+
+// middleware
+app.use(express.json());
+
+// API ROUTES
+app.use("./api/books", books);
 
 app.get("/", (req, res) => {
   res.send("Hello Ziaire");
