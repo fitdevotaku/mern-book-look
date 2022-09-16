@@ -20,7 +20,7 @@ app.use(cors());
 app.use(express.json());
 
 // API ROUTES
-app.use("./api/books", books);
+app.use("/api/books", books);
 
 app.get("/", (req, res) => {
   res.send("Hello Ziaire");
