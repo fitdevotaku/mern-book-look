@@ -21,3 +21,7 @@ Also, implemented bootstrap, fontawesome, dotenv and cors
 
 - Run the command npm init -y into your terminal. 
 - List all of these dependencies in your package.json
+
+## Frontend goals
+1. Create/save a book
+2. Show books have stored in the database
