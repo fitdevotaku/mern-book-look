@@ -7,10 +7,7 @@ const BookCard = (props) => {
 
   return (
     <div className="card-container">
-      <img
-        src="https://www.infobooks.org/free-pdf-books/sports/bodybuilding/"
-        alt=""
-      />
+      <img src="../Bodybuilding-Books.webp" alt="buildingMuscle" />
       <div className="details">
         <h2>
           <Link to={`/display-book/${book._id}`}>{book.title}</Link>
